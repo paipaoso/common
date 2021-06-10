@@ -32,9 +32,9 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/kubernetes/pkg/controller"
 
-	apiv1 "github.com/kubeflow/common/job_controller/api/v1"
-	commonutil "github.com/kubeflow/common/util"
-	trainutil "github.com/kubeflow/common/util/train"
+	apiv1 "github.com/paipaoso/common/job_controller/api/v1"
+	commonutil "github.com/paipaoso/common/util"
+	trainutil "github.com/paipaoso/common/util/train"
 )
 
 const (

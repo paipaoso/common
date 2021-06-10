@@ -18,8 +18,8 @@ import (
 	"strconv"
 	"strings"
 
-	apiv1 "github.com/kubeflow/common/job_controller/api/v1"
-	commonutil "github.com/kubeflow/common/util"
+	apiv1 "github.com/paipaoso/common/job_controller/api/v1"
+	commonutil "github.com/paipaoso/common/util"
 	log "github.com/sirupsen/logrus"
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/errors"

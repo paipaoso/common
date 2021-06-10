@@ -17,8 +17,8 @@
 package v1
 
 import (
-	scheme "github.com/kubeflow/common/client/clientset/versioned/scheme"
-	v1 "github.com/kubeflow/common/test_job/v1"
+	scheme "github.com/paipaoso/common/client/clientset/versioned/scheme"
+	v1 "github.com/paipaoso/common/test_job/v1"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"

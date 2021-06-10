@@ -17,7 +17,7 @@
 package fake
 
 import (
-	v1 "github.com/kubeflow/common/client/clientset/versioned/typed/test_job/v1"
+	v1 "github.com/paipaoso/common/client/clientset/versioned/typed/test_job/v1"
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
 )

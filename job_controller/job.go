@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	apiv1 "github.com/kubeflow/common/job_controller/api/v1"
-	commonutil "github.com/kubeflow/common/util"
-	"github.com/kubeflow/common/util/k8sutil"
+	apiv1 "github.com/paipaoso/common/job_controller/api/v1"
+	commonutil "github.com/paipaoso/common/util"
+	"github.com/paipaoso/common/util/k8sutil"
 	log "github.com/sirupsen/logrus"
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"

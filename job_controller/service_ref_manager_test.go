@@ -22,8 +22,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 
-	testjobv1 "github.com/kubeflow/common/test_job/v1"
-	testutilv1 "github.com/kubeflow/common/test_util/v1"
+	testjobv1 "github.com/paipaoso/common/test_job/v1"
+	testutilv1 "github.com/paipaoso/common/test_util/v1"
 )
 
 func TestClaimServices(t *testing.T) {

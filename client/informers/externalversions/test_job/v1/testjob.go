@@ -19,10 +19,10 @@ package v1
 import (
 	time "time"
 
-	versioned "github.com/kubeflow/common/client/clientset/versioned"
-	internalinterfaces "github.com/kubeflow/common/client/informers/externalversions/internalinterfaces"
-	v1 "github.com/kubeflow/common/client/listers/test_job/v1"
-	test_job_v1 "github.com/kubeflow/common/test_job/v1"
+	versioned "github.com/paipaoso/common/client/clientset/versioned"
+	internalinterfaces "github.com/paipaoso/common/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/paipaoso/common/client/listers/test_job/v1"
+	test_job_v1 "github.com/paipaoso/common/test_job/v1"
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"

@@ -1,4 +1,4 @@
-module github.com/kubeflow/common
+module github.com/paipaoso/common
 
 go 1.11
 

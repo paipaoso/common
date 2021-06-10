@@ -17,9 +17,9 @@
 package fake
 
 import (
-	clientset "github.com/kubeflow/common/client/clientset/versioned"
-	kubeflowv1 "github.com/kubeflow/common/client/clientset/versioned/typed/test_job/v1"
-	fakekubeflowv1 "github.com/kubeflow/common/client/clientset/versioned/typed/test_job/v1/fake"
+	clientset "github.com/paipaoso/common/client/clientset/versioned"
+	kubeflowv1 "github.com/paipaoso/common/client/clientset/versioned/typed/test_job/v1"
+	fakekubeflowv1 "github.com/paipaoso/common/client/clientset/versioned/typed/test_job/v1/fake"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/watch"
 	"k8s.io/client-go/discovery"

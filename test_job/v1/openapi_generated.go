@@ -30,7 +30,7 @@ import (
 
 func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenAPIDefinition {
 	return map[string]common.OpenAPIDefinition{
-		"github.com/kubeflow/common/test_job/v1.TestJob": {
+		"github.com/paipaoso/common/test_job/v1.TestJob": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Description: "A generic job used for unit tests.",
@@ -58,22 +58,22 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 						"spec": {
 							SchemaProps: spec.SchemaProps{
 								Description: "Specification of the desired behavior of the TestJob.",
-								Ref:         ref("github.com/kubeflow/common/test_job/v1.TestJobSpec"),
+								Ref:         ref("github.com/paipaoso/common/test_job/v1.TestJobSpec"),
 							},
 						},
 						"status": {
 							SchemaProps: spec.SchemaProps{
 								Description: "Most recently observed status of the TestJob. This data may not be up to date. Populated by the system. Read-only.",
-								Ref:         ref("github.com/kubeflow/common/operator/v1.JobStatus"),
+								Ref:         ref("github.com/paipaoso/common/operator/v1.JobStatus"),
 							},
 						},
 					},
 				},
 			},
 			Dependencies: []string{
-				"github.com/kubeflow/common/operator/v1.JobStatus", "github.com/kubeflow/common/test_job/v1.TestJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
+				"github.com/paipaoso/common/operator/v1.JobStatus", "github.com/paipaoso/common/test_job/v1.TestJobSpec", "k8s.io/apimachinery/pkg/apis/meta/v1.ObjectMeta"},
 		},
-		"github.com/kubeflow/common/test_job/v1.TestJobList": {
+		"github.com/paipaoso/common/test_job/v1.TestJobList": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Description: "TestJobList is a list of TestJobs.",
@@ -105,7 +105,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 								Items: &spec.SchemaOrArray{
 									Schema: &spec.Schema{
 										SchemaProps: spec.SchemaProps{
-											Ref: ref("github.com/kubeflow/common/test_job/v1.TestJob"),
+											Ref: ref("github.com/paipaoso/common/test_job/v1.TestJob"),
 										},
 									},
 								},
@@ -116,16 +116,16 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 				},
 			},
 			Dependencies: []string{
-				"github.com/kubeflow/common/test_job/v1.TestJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
+				"github.com/paipaoso/common/test_job/v1.TestJob", "k8s.io/apimachinery/pkg/apis/meta/v1.ListMeta"},
 		},
-		"github.com/kubeflow/common/test_job/v1.TestJobSpec": {
+		"github.com/paipaoso/common/test_job/v1.TestJobSpec": {
 			Schema: spec.Schema{
 				SchemaProps: spec.SchemaProps{
 					Description: "TestJobSpec is a desired state description of the TestJob.",
 					Properties: map[string]spec.Schema{
 						"runPolicy": {
 							SchemaProps: spec.SchemaProps{
-								Ref: ref("github.com/kubeflow/common/operator/v1.RunPolicy"),
+								Ref: ref("github.com/paipaoso/common/operator/v1.RunPolicy"),
 							},
 						},
 						"testReplicaSpecs": {
@@ -134,7 +134,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 								AdditionalProperties: &spec.SchemaOrBool{
 									Schema: &spec.Schema{
 										SchemaProps: spec.SchemaProps{
-											Ref: ref("github.com/kubeflow/common/operator/v1.ReplicaSpec"),
+											Ref: ref("github.com/paipaoso/common/operator/v1.ReplicaSpec"),
 										},
 									},
 								},
@@ -145,7 +145,7 @@ func GetOpenAPIDefinitions(ref common.ReferenceCallback) map[string]common.OpenA
 				},
 			},
 			Dependencies: []string{
-				"github.com/kubeflow/common/operator/v1.ReplicaSpec", "github.com/kubeflow/common/operator/v1.RunPolicy"},
+				"github.com/paipaoso/common/operator/v1.ReplicaSpec", "github.com/paipaoso/common/operator/v1.RunPolicy"},
 		},
 		"k8s.io/api/core/v1.AWSElasticBlockStoreVolumeSource": {
 			Schema: spec.Schema{

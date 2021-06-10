@@ -21,9 +21,9 @@ import (
 	sync "sync"
 	time "time"
 
-	versioned "github.com/kubeflow/common/client/clientset/versioned"
-	internalinterfaces "github.com/kubeflow/common/client/informers/externalversions/internalinterfaces"
-	test_job "github.com/kubeflow/common/client/informers/externalversions/test_job"
+	versioned "github.com/paipaoso/common/client/clientset/versioned"
+	internalinterfaces "github.com/paipaoso/common/client/informers/externalversions/internalinterfaces"
+	test_job "github.com/paipaoso/common/client/informers/externalversions/test_job"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"

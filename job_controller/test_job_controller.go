@@ -1,8 +1,8 @@
 package job_controller
 
 import (
-	apiv1 "github.com/kubeflow/common/job_controller/api/v1"
-	testv1 "github.com/kubeflow/common/test_job/v1"
+	apiv1 "github.com/paipaoso/common/job_controller/api/v1"
+	testv1 "github.com/paipaoso/common/test_job/v1"
 	log "github.com/sirupsen/logrus"
 	corev1 "k8s.io/api/core/v1"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"

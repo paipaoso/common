@@ -3,9 +3,9 @@ package job_controller
 import (
 	"testing"
 
-	apiv1 "github.com/kubeflow/common/job_controller/api/v1"
-	testjobv1 "github.com/kubeflow/common/test_job/v1"
-	testutilv1 "github.com/kubeflow/common/test_util/v1"
+	apiv1 "github.com/paipaoso/common/job_controller/api/v1"
+	testjobv1 "github.com/paipaoso/common/test_job/v1"
+	testutilv1 "github.com/paipaoso/common/test_util/v1"
 	"github.com/stretchr/testify/assert"
 	"k8s.io/api/core/v1"
 )

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	apiv1 "github.com/kubeflow/common/job_controller/api/v1"
+	apiv1 "github.com/paipaoso/common/job_controller/api/v1"
 	"github.com/kubernetes-sigs/kube-batch/pkg/apis/scheduling/v1alpha1"
 	log "github.com/sirupsen/logrus"
 	"k8s.io/api/policy/v1beta1"

@@ -17,8 +17,8 @@
 package kubeflow
 
 import (
-	internalinterfaces "github.com/kubeflow/common/client/informers/externalversions/internalinterfaces"
-	v1 "github.com/kubeflow/common/client/informers/externalversions/test_job/v1"
+	internalinterfaces "github.com/paipaoso/common/client/informers/externalversions/internalinterfaces"
+	v1 "github.com/paipaoso/common/client/informers/externalversions/test_job/v1"
 )
 
 // Interface provides access to each of this group's versions.

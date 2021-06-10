@@ -3,7 +3,7 @@ package util
 import (
 	"testing"
 
-	apiv1 "github.com/kubeflow/common/job_controller/api/v1"
+	apiv1 "github.com/paipaoso/common/job_controller/api/v1"
 	"github.com/stretchr/testify/assert"
 	corev1 "k8s.io/api/core/v1"
 )
